@@ -1,0 +1,100 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK Car Accidents Analysis Dashboard</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>UK Car Accidents Analysis Dashboard</h1>
+            <p class="subtitle">Comprehensive Analysis: Hot Spots, Trends, Correlation & Descriptive Statistics</p>
+        </header>
+
+        <div class="dashboard">
+            <!-- Descriptive Statistics Section -->
+            <section class="stats-section">
+                <h2>Descriptive Statistics</h2>
+                <div id="descriptive-stats" class="stats-grid"></div>
+            </section>
+
+            <!-- Hot Spot Analysis Section -->
+            <section class="chart-section">
+                <h2>Hot Spot Analysis: Average Severity by Location Clusters</h2>
+                <div class="chart-container">
+                    <canvas id="hotspot-chart"></canvas>
+                </div>
+                <div id="hotspot-details" class="details-box"></div>
+            </section>
+
+            <!-- Time Trend Analysis -->
+            <section class="chart-section">
+                <h2>Accident Trends Over Time</h2>
+                <div class="chart-container">
+                    <canvas id="trend-chart"></canvas>
+                </div>
+                <div id="trend-analysis" class="details-box"></div>
+            </section>
+
+            <!-- Monthly Breakdown -->
+            <section class="chart-section">
+                <h2>Accidents by Month</h2>
+                <div class="chart-container">
+                    <canvas id="monthly-chart"></canvas>
+                </div>
+            </section>
+
+            <!-- Correlation Matrix -->
+            <section class="chart-section">
+                <h2>Correlation Matrix</h2>
+                <div class="chart-container">
+                    <canvas id="correlation-chart"></canvas>
+                </div>
+                <div id="correlation-insights" class="details-box"></div>
+            </section>
+
+
+
+            <!-- Hourly Analysis -->
+            <section class="chart-section">
+                <h2>Accidents by Hour</h2>
+                <div class="chart-container">
+                    <canvas id="region-chart"></canvas>
+                </div>
+            </section>
+
+            <!-- Weather Impact -->
+            <section class="chart-section">
+                <h2>Weather Conditions Impact on Accidents</h2>
+                <div class="chart-container">
+                    <canvas id="weather-chart"></canvas>
+                </div>
+            </section>
+
+            <!-- 5-Year Trend Analysis -->
+            <section class="chart-section">
+                <h2>5-Year Accident Trend Analysis</h2>
+                <div class="chart-container">
+                    <canvas id="five-year-trend-chart"></canvas>
+                </div>
+            </section>
+
+            <!-- 5-Year Weather Trend -->
+            <section class="chart-section">
+                <h2>5-Year Weather Trend Analysis</h2>
+                <div class="chart-container">
+                    <canvas id="five-year-weather-chart"></canvas>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="graph.js"></script>
+</body>
+</html>
+
+
